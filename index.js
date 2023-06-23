@@ -6,7 +6,7 @@ function calculate() {
   let degree = degreeElement.value;
   let type = typeElement.value;
 
-  if (type === "Fahrenheit") {
+  if (type === "fahrenheit") {
     return (degree * (9 / 5) + 32).toFixed(2);
   } else {
     return ((degree - 32) * (5 / 9)).toFixed(2);
@@ -15,5 +15,4 @@ function calculate() {
 
 function renderResult() {
   resultElement.value = calculate();
-  console.log(calculate());
 }
